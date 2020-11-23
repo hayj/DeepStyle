@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import numpy as np
+import os
 from transformers import DistilBertConfig, DistilBertTokenizer, TFDistilBertForSequenceClassification
 import logging
 
