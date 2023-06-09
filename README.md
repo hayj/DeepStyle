@@ -6,7 +6,7 @@
 
 To get the datasets (i.e. the *R-set* and 22 main *U-sets*), please send me a private message or create a new issue in the repository.
 
-The DeepStyle model (pretrained *DBert-ft*) is available at available at <https://drive.google.com/file/d/1Y9TMjj04fVhNuJnhzaM4Wmn2CQfZ8r8U/view?usp=share_link>.
+The DeepStyle model (pretrained *DBert-ft*) is available at <https://drive.google.com/file/d/1Y9TMjj04fVhNuJnhzaM4Wmn2CQfZ8r8U/view?usp=share_link>.
 
 ## Installation
 
@@ -34,6 +34,12 @@ print(m.embed(doc)) # Return a np.ndarray [-0.6553829, 0.3634828, ..., 1.2970213
 # Get the pretrained model and use its methods (e.g. to get attentions):
 m.model # See https://huggingface.co/transformers/model_doc/distilbert.html#tfdistilbertforsequenceclassification
 ```
+
+In case you have troubles executing this, create a new Python environement and install these package versions:
+
+	pip uninstall -y tensorflow && pip install tensorflow==2.0
+	pip uninstall -y transformers && pip install transformers==2.4.1
+	pip uninstall -y h5py && pip install h5py==2.10.0
 
 ## Experiments
 
